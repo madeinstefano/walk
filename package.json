@@ -1,0 +1,27 @@
+{
+  "name": "walk",
+  "version": "1.0.0",
+  "description": "Recursively read all files path from directory",
+  "main": "walk.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/madeinstefano/walk.git"
+  },
+  "keywords": [
+    "javascript",
+    "filepath",
+    "read"
+  ],
+  "author": "Stéfano Stypulkowski (http://szanata.com)",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/madeinstefano/run/issues"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
+}
