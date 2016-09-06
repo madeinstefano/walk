@@ -1,6 +1,6 @@
 {
   "name": "walk.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Recursively read all files path from directory",
   "main": "walk.js",
   "repository": {
