@@ -1,5 +1,5 @@
 {
-  "name": "walk",
+  "name": "walk.js",
   "version": "1.0.0",
   "description": "Recursively read all files path from directory",
   "main": "walk.js",
