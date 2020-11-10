@@ -1,18 +1,19 @@
+const { readdirSync, statSync } = require('fs');
+const { join } = require( 'path' );
 
-var fs = require('fs');
-var path = require('path');
-
-function walk(dir) {
-  var results = [], list = fs.readdirSync(dir);
-  list.forEach(function (file) {
-    let filePath = path.join(dir, '/', file);
-    let stat = fs.statSync(filePath);
-    if (stat && stat.isDirectory()) {
-      results = results.concat(walk(filePath));
+const walk = dir => {
+  const results = [];
+  const list = readdirSync( dir );
+  for ( const file of list ) {
+    const filePath = join( dir, '/', file );
+    const stat = statSync( filePath );
+    if (stat && stat.isDirectory() ) {
+      results.push( ... walk( filePath ) );
     } else {
-      results.push(filePath);
+      results.push( filePath );
     }
-  });
+  }
+  console.log( results )
   return results;
 }
 
